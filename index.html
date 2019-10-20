@@ -18,18 +18,87 @@
 
 </head>
 
-<body>
-	<h1>Index pages</h1>
-	<div id="like_button_container"></div>
-		
-	<!-- Load React. -->
-	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-	<!-- Load our React component. -->
-	<script src="components/like_button.js"></script>
+<body class="body">
+	<header class="header container-fluid bg-dark">
+		<div class="row">
+			<div class="header-left col-sm-3">
+				<div class="my-blog">huanhkv's blog</div>
+			</div>
+			
+			<div class="header-right col-sm-5 ml-auto">
+				<nav class="nav">
+					<div class="nav-item">Blog</div>
+					<div class="nav-item">About</div>
+					<div class="nav-item">Contract</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
 	
+	<div class="container content bg-opacity border border-dark rounded mt-3">
+		<section class="gird-container">
+			<h2 class="category">Category 1</h2>
+			<div class="gird-item post border border-dark rounded m-2 p-2">
+				<div class="post-image">
+					<img src="resources/images/Untitled.png">
+				</div>
+				
+				<div class="post-info">
+					<h4 class="post-title">Post 1</h4>
+				</div>
+			</div>
+			
+			<div class="gird-item post border border-dark rounded m-2 p-2">
+				<div class="post-image">
+					<img src="resources/images/Untitled.png">
+				</div>
+				
+				<div class="post-info">
+					<h4 class="post-title">Post 1</h4>
+				</div>
+			</div>
+			
+			<div class="gird-item post border border-dark rounded m-2 p-2">
+				<div class="post-image">
+					<img src="resources/images/Untitled.png">
+				</div>
+				
+				<div class="post-info">
+					<h4 class="post-title">Post 1</h4>
+				</div>
+			</div>
+			
+			<div class="gird-item post border border-dark rounded m-2 p-2">
+				<div class="post-image">
+					<img src="resources/images/Untitled.png">
+				</div>
+				
+				<div class="post-info">
+					<h4 class="post-title">Post 1</h4>
+				</div>
+			</div>
+			
+			<div class="gird-item post border border-dark rounded m-2 p-2">
+				<div class="post-image">
+					<img src="resources/images/Untitled.png">
+				</div>
+				
+				<div class="post-info">
+					<h4 class="post-title">Post 1</h4>
+				</div>
+			</div>
+			
+		</section>
+		<hr>
+	</div>
+	<!-- End Main Content -->
+	
+	<footer class="footer my-3">
+		<div class=""></div>
+		<div class=""></div>
+	</footer>
+	<!-- End Footer -->
 		
 	<!-- Load Bootstrap -->
 	<script src="resources/libs/jquery-3.4.1/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
