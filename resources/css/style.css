@@ -37,10 +37,11 @@ hr {
 	color: #fff;
 	font-size: 1.2em;
 	margin: 0.3em;
+	text-decoration: none;
 }
 
 .container {
-	width: 85%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -50,6 +51,7 @@ hr {
 .section-category {
 	margin: 0.1em;
 	padding: 0.1em;
+	padding-left: 1em;
 }
 
 .card {
@@ -58,15 +60,15 @@ hr {
 	background: #fff
 }
 
-.card-image {
+.card .card-image {
 	height: 85%;
 }
 
-.card-image img{
+.card .card-image img{
 	max-width: 100%;
 }
 
-.card-info {
+.card .card-info {
 	height: 15%
 }
 
