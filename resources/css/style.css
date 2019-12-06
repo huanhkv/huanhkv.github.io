@@ -15,7 +15,7 @@
 .border-5 { border-width:0.5em !important; }
 
 .bg-image {
-	background: url("../images/IMG_20190303_093028.jpg") no-repeat center center fixed; 
+	background: url("https://huanhkv.github.io/resources/images/IMG_20190303_093028.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
