@@ -18,7 +18,7 @@
 <body class="bg-light">
 
     <header class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top border-bottom">
-        <a class="navbar-brand" href="http://huanhkv.github.io/">Winter V. HoKha</a>
+        <a class="navbar-brand" href="http://huanhkv.github.io/">Winter HoKha</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,22 +38,21 @@
             </ul>
         </div>
     </header>
-    <!-- End Navbar -->
-    <h2></h2>
-	<div class="container-fluid mt-3">
-        <div class="row justify-content-around">
-            <div class="col-lg-2 col-md-3">
-                <nav class="nav flex-md-column justify-content-center nav-pills nav-justified p-3 border rounded bg-light" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-cs-tab" data-toggle="pill" href="#v-pills-cs" role="tab" aria-controls="v-pills-cs" aria-selected="true">Computer Science</a>
-                    <a class="nav-link" id="v-pills-poem-tab" data-toggle="pill" href="#v-pills-poem" role="tab" aria-controls="v-pills-poem" aria-selected="false">Poem</a>
-                    <a class="nav-link" id="v-pills-music-tab" data-toggle="pill" href="#v-pills-music" role="tab" aria-controls="v-pills-music" aria-selected="false">Music</a>
-                </nav>
-            </div>
-			
-            <div class="col-lg-9 col-md-9">
-                <div class="tab-content border border-2 border-dark rounded p-3 bg-opacity" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-cs" role="tabpanel" aria-labelledby="v-pills-cs-tab">
-                        <h4>Computer Science</h4>
+    <!-- End Header -->
+
+	<div class="container-fluid">		
+		<div class="row justify-content-around">
+			<div class="col-lg-2 col-md-3 mt-5">
+				<nav class="list-group flex-md-column nav-justified" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active" id="list-cs-list" data-toggle="list" href="#list-cs" role="tab" aria-controls="cs">Computer Science</a>
+					<a class="list-group-item list-group-item-action" id="list-poem-list" data-toggle="list" href="#list-poem" role="tab" aria-controls="poem">Poem</a>
+					<a class="list-group-item list-group-item-action" id="list-music-list" data-toggle="list" href="#list-music" role="tab" aria-controls="music">Music</a>
+				</nav>
+			</div>
+			<div class="col-lg-9 col-md-9 mt-3">
+				<div class="tab-content  border border-2 border-dark rounded p-3 bg-opacity" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="list-cs" role="tabpanel" aria-labelledby="list-cs-list">
+						<h4>Computer Science</h4>
 						<hr>
 						<div class="card-columns mt-4">
 							<a href="" class="card text-center">
@@ -84,13 +83,11 @@
 								</div>
 							</a>
 						</div>
-                    </div>
-					<!-- End Categorized -->
-                    
-                    <div class="tab-pane fade" id="v-pills-poem" role="tabpanel" aria-labelledby="v-pills-poem-tab">
-                        <h4>Poem</h4>
+					</div>
+					<div class="tab-pane fade" id="list-poem" role="tabpanel" aria-labelledby="list-poem-list">
+						<h4>Computer Science</h4>
 						<hr>
-                        <div class="card-columns mt-4">
+						<div class="card-columns mt-4">
 							<a href="" class="card text-center">
 								<img src="resources/images/background1.jpg" class="card-img-top" alt="...">
 								<div class="card-header">
@@ -119,55 +116,49 @@
 								</div>
 							</a>
 						</div>
-                    </div>
-					<!-- End Categorized -->
+					</div>
+					<div class="tab-pane fade" id="list-music" role="tabpanel" aria-labelledby="list-music-list">
+						<h4>Computer Science</h4>
+						<hr>
+						<div class="card-columns mt-4">
+							<a href="" class="card text-center">
+								<img src="resources/images/background1.jpg" class="card-img-top" alt="...">
+								<div class="card-header">
+									<h5 class="card-title">Tìm hiểu về regularization</h5>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</a>
+							<a href="" class="card text-center">
+								<img src="resources/images/Untitled1.jpg" class="card-img-top" alt="...">
+								<div class="card-header">
+									<h5 class="card-title">Card title</h5>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</a>
+							<a href="" class="card text-center">
+								<img src="resources/images/Untitled.png" class="card-img-top" alt="...">
+								<div class="card-header">
+									<h5 class="card-title">Card title</h5>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                    <div class="tab-pane fade" id="v-pills-music" role="tabpanel" aria-labelledby="v-pills-music-tab">
-                        <h4>Music</h4>
-						<hr>
-                        <div class="card-columns mt-4">
-							<a href="" class="card text-center">
-								<img src="resources/images/background1.jpg" class="card-img-top" alt="...">
-								<div class="card-header">
-									<h5 class="card-title">Tìm hiểu về regularization</h5>
-								</div>
-								<div class="card-body">
-									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-								</div>
-							</a>
-							<a href="" class="card text-center">
-								<img src="resources/images/Untitled1.jpg" class="card-img-top" alt="...">
-								<div class="card-header">
-									<h5 class="card-title">Card title</h5>
-								</div>
-								<div class="card-body">
-									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-								</div>
-							</a>
-							<a href="" class="card text-center">
-								<img src="resources/images/Untitled.png" class="card-img-top" alt="...">
-								<div class="card-header">
-									<h5 class="card-title">Card title</h5>
-								</div>
-								<div class="card-body">
-									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-								</div>
-							</a>
-						</div>
-                    </div>
-					<!-- End Categorized -->
-                </div>
-            </div>
-        </div>
     </div>
 	<!-- End Main Content -->
     
-	<footer class="footer-custom mt-3 py-4 text-center text-light border-top">
-		<h5>WinterHk</h5>
-	</footer>
-	<!-- End Footer -->
-    
-    
+	
+	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
