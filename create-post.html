@@ -1,0 +1,139 @@
+<html>
+<head>	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Reideen's Blog</title>
+	
+	<!-- Icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<link href="resources/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-image">
+
+    <header class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top border-bottom">
+        <a class="navbar-brand" href="http://huanhkv.github.io/">Winter HoKha</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="bucket.html">Bucket list</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+	
+	<div class="container-fluid mt-3">
+        <div class="row">
+			<div class="col-md-6">
+				<div class="card bg-opacity-9 mb-3 non-pointer">
+					<div class="card-header">
+						<h3>Create post</h3>
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label class="col-form-label-lg sr-only" for="postTitleForm">Title</label>
+                                        <input type="text" class="form-control form-control-lg is-invalid" id="postTitleForm" placeholder="Title post" required>
+                                        <div class="invalid-feedback">Please enter a title for this post.</div>
+                                        <div class="invalid-feedback">Post title exist. Please enter new title.</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="contentPost">Content post</label>
+                                    <textarea class="form-control" id="contentPost" rows="15"></textarea>
+                                </div>
+                                <div class="form-row justify-content-end">
+                                    <div class="form-group ">
+                                        <button class="btn btn-primary" id="btn-review" type="button">Review</button>
+                                    </div>
+                                </div>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-3 pt-0">Categories</legend>
+                                        <div class="col-sm-9">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input is-invalid" id="radioCS" name="radio-stacked" required>
+                                                <label class="custom-control-label" for="radioCS">Computer Science</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input is-invalid" id="radioPoem" name="radio-stacked" required>
+                                                <label class="custom-control-label" for="radioPoem">Poem</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input is-invalid" id="radioMusic" name="radio-stacked" required>
+                                                <label class="custom-control-label" for="radioMusic">Music</label>
+                                                <div class="invalid-feedback">Please choose categories</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="form-group">
+                                    <label class="" for="featuredImage">Link featured image</label>
+                                    <input type="text" class="form-control form-control-lg is-invalid" id="featuredImage" placeholder="Link featured image" required>
+                                    <div class="invalid-feedback">Please provide a featured image this post.</div>
+                                </div>
+
+                                <div class="form-row justify-content-end">
+                                    <div class="form-group ">
+                                        <button class="btn btn-success" id="btn-review" type="submit">Post</button>
+                                    </div>
+                                </div>
+                            </form>
+						</p>
+					</div>
+				</div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-opacity-9 mb-3 non-pointer">
+                    <div class="card-header">
+                        <h3>Review</h3>
+                    </div>
+                    <div class="card-body ml-3">
+                        <p class="card-text" id="review">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Main Content -->
+	
+	
+    
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script src="resources/js/script.js"></script>
+	<script>
+        $("#btn-review").click(function(){
+            $("#review").html($("#contentPost").val())
+        });
+    </script>
+    
+</body>
+</html>

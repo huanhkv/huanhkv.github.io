@@ -30,6 +30,7 @@
 .bg-opacity-5 { background: rgba(255, 255, 255, 0.5); }
 .bg-opacity-6 { background: rgba(255, 255, 255, 0.6); }
 .bg-opacity-8 { background: rgba(255, 255, 255, 0.8); }
+.bg-opacity-9 { background: rgba(255, 255, 255, 0.9); }
 
 /* Override */
 .card {
