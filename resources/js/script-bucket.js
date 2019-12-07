@@ -11,7 +11,6 @@ var bucket_list = [
 	{checked : 0, content : "Đưa ba mẹ đi chơi trong nước"},
 	{checked : 0, content : "Đưa ba mẹ đi chơi ngoài nước"},
 	{checked : 0, content : "Cưới vợ"},
-	{checked : 0, content : "Cùng vợ nuôi con"},
 	{checked : 0, content : "Sống thử ở Nhật Bản"},
 	{checked : 0, content : "Sống thử ở Thụy Sĩ"},
 	{checked : 0, content : "Kiếm tiền xây nhà"}
