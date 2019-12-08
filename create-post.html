@@ -15,32 +15,11 @@
 
 <body class="bg-image">
 
-    <header class="navbar navbar-expand-md navbar-dark navbar-custom sticky-top border-bottom">
-        <a class="navbar-brand" href=".">Winter HoKha</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bucket.html">Bucket list</a>
-                </li>
-            </ul>
-        </div>
-    </header>
     <!-- End Header -->
 	
 	<div class="container-fluid mt-3">
         <div class="row">
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<div class="card bg-opacity-9 mb-3 non-pointer">
 					<div class="card-header">
 						<h3>Create post</h3>
@@ -68,20 +47,8 @@
                                 <fieldset class="form-group">
                                     <div class="row">
                                         <legend class="col-form-label col-sm-3 pt-0">Categories</legend>
-                                        <div class="col-sm-9">
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input is-invalid" id="radioCS" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="radioCS">Computer Science</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input is-invalid" id="radioPoem" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="radioPoem">Poem</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input is-invalid" id="radioMusic" name="radio-stacked" required>
-                                                <label class="custom-control-label" for="radioMusic">Music</label>
-                                                <div class="invalid-feedback">Please choose categories</div>
-                                            </div>
+                                        <div class="col-sm-9 choose-category-js">
+                                            <!-- Tab choose category -->
                                         </div>
                                     </div>
                                 </fieldset>
@@ -102,7 +69,7 @@
 					</div>
 				</div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card bg-opacity-9 mb-3 non-pointer">
                     <div class="card-header">
                         <h3>Review</h3>
@@ -127,13 +94,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
     <script src="resources/js/script.js"></script>
-	<script>
-        $("#btn-review").click(function(){
-            $("#review").html($("#contentPost").val())
-        });
-    </script>
-    
     <script src="resources/js/readfile.js"></script>
+	<script src="resources/js/create-post.js"></script>
 
 </body>
 </html>

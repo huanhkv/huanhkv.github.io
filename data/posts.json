@@ -2,74 +2,74 @@
     "post":[
         {
             "title":"Tìm hiểu về regularization",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Computer Science",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"CS1",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Computer Science",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"CS2",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Computer Science",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Poem1",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Poem",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Poem2",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Poem",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Poem3",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Poem",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Music1",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Music",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Music2",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Music",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         },
         {
             "title":"Music3",
-            "created":"2019-12-7 11:58",
+            "created":"2019-12-08T06:46:28.184Z",
             "update":"",
             "categories":"Music",
-            "featureImage":"/images/Untitled1.jpg",
+            "featureImage":"images/Untitled1.jpg",
             "content":"Demo post"
         }
     ]
