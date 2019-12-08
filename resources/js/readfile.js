@@ -52,10 +52,10 @@ function readCategories_index(obj) {
 // Function add element about Post in index.html
 function readPost_index(obj) {
 	$.each(obj.post, function(index, value){
-        var file = change_alias(value.title).toLowerCase().replace(/ /g, '-') + ".html";
+        var file = change_alias(value.title).toLowerCase().replace(/ /g, '-');
         var category = value.categories.toLowerCase().replace(/ /g, '-');
         var date = new Date(value.created);
-		var temp = `<a href="posts/${file}" class="card text-center">
+		var temp = `<a href="post.html?post=${file}" class="card text-center">
                         <img src="${value.featureImage}" class="card-img-top" alt="${value.title}">
                         <div class="card-header">
                             <h5 class="card-title">${value.title}</h5>
@@ -65,8 +65,6 @@ function readPost_index(obj) {
                         </div>
                     </a>`;
         $(`.list-${category}-js`).append(temp);
-        // console.log(date.toUTCString());
-        console.log(change_alias(value.title).toLowerCase().replace(/ /g, '-'));
 	})	
 }
 
@@ -98,9 +96,12 @@ function readBucketList_bucket(obj) {
 
 // Function add element about Post in post.html
 function readPost_post(obj) {
+    let post = new URLSearchParams(location.search).get("post");
+    console.log(post)
+
     $.each(obj.post, function(index, value){
-        var title = change_alias(value.title).toLowerCase().replace(/ /g, '-') + ".html";
-        if (title == page) {
+        var title = change_alias(value.title).toLowerCase().replace(/ /g, '-');
+        if (title == post) {
             var date = new Date(value.created);
             $("title").text(value.title + " - Blog's Reideen");
             $(".title-post").text(value.title);
@@ -120,6 +121,5 @@ if (page == "" || page == "index.html") {
 } else if (page == "create-post.html") {
     loadDoc(categories_url, readCategories_createPost); // create-post.html
 } else {
-    posts_url = "../" + posts_url;
     loadDoc(posts_url, readPost_post);                  // all page post
 }
