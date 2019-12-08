@@ -6,7 +6,7 @@
             "update":"",
             "categories":"Computer Science",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"CS1",
@@ -14,7 +14,7 @@
             "update":"",
             "categories":"Computer Science",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"CS2",
@@ -22,7 +22,7 @@
             "update":"",
             "categories":"Computer Science",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"Poem1",
@@ -30,7 +30,7 @@
             "update":"",
             "categories":"Poem",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"Poem2",
@@ -38,7 +38,7 @@
             "update":"",
             "categories":"Poem",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"Poem3",
@@ -46,15 +46,7 @@
             "update":"",
             "categories":"Poem",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
-        },
-        {
-            "title":"Music1",
-            "created":"2019-12-08T06:46:28.184Z",
-            "update":"",
-            "categories":"Music",
-            "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"Music2",
@@ -62,7 +54,7 @@
             "update":"",
             "categories":"Music",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
         },
         {
             "title":"Music3",
@@ -70,7 +62,23 @@
             "update":"",
             "categories":"Music",
             "featureImage":"images/Untitled1.jpg",
-            "content":"Demo post"
+            "content":"Content demo post..."
+        },
+        {
+            "title":"Post",
+            "created":"2019-12-08T06:46:28.184Z",
+            "update":"",
+            "categories":"Computer Science",
+            "featureImage":"images/Untitled1.jpg",
+            "content":"Content demo post..."
+        },
+        {
+            "title":"My playlist",
+            "created":"2019-12-08T06:46:28.184Z",
+            "update":"",
+            "categories":"Music",
+            "featureImage":"images/Untitled1.jpg",
+            "content":"<p>Hello, this is first demo for my blog.</p><p>Video:</p><iframe height='315' style='width:80%; min-height:400px; margin:auto;' src='https://www.youtube.com/embed/bBmCBj9bUg4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br /><br /><iframe style='width:80%; min-height:400px' src='https://www.youtube.com/embed/OTfZ24C5RfI' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
         }
     ]
 }

@@ -22,7 +22,7 @@ function loadDoc(url, callback) {
 function readCategories_index(obj) {
     // Create tag div for categories
     $.each(obj.categories, function(index, value){
-        var category = value.toLowerCase().replace(' ', '-');
+        var category = value.toLowerCase().replace(/ /g, '-');
 
         // Add sidebar
         var temp = `<a class="list-group-item list-group-item-action" 
@@ -45,16 +45,17 @@ function readCategories_index(obj) {
                 </div>`;
         $(".content-js").append(temp);
     })
-    $(`#list-${obj.categories[0].toLowerCase().replace(' ', '-')}-list`).addClass('active')
-    $(`#list-${obj.categories[0].toLowerCase().replace(' ', '-')}`).addClass('active show')
+    $(`#list-${obj.categories[0].toLowerCase().replace(/ /g, '-')}-list`).addClass('active')
+    $(`#list-${obj.categories[0].toLowerCase().replace(/ /g, '-')}`).addClass('active show')
 }
 
 // Function add element about Post in index.html
 function readPost_index(obj) {
 	$.each(obj.post, function(index, value){
-        var category = value.categories.toLowerCase().replace(' ', '-');
+        var file = change_alias(value.title).toLowerCase().replace(/ /g, '-') + ".html";
+        var category = value.categories.toLowerCase().replace(/ /g, '-');
         var date = new Date(value.created);
-		var temp = `<a href="" class="card text-center">
+		var temp = `<a href="posts/${file}" class="card text-center">
                         <img src="${value.featureImage}" class="card-img-top" alt="${value.title}">
                         <div class="card-header">
                             <h5 class="card-title">${value.title}</h5>
@@ -65,6 +66,7 @@ function readPost_index(obj) {
                     </a>`;
         $(`.list-${category}-js`).append(temp);
         // console.log(date.toUTCString());
+        console.log(change_alias(value.title).toLowerCase().replace(/ /g, '-'));
 	})	
 }
 
@@ -72,15 +74,15 @@ function readPost_index(obj) {
 function readCategories_createPost(obj) {
     // Add Tab choose category
     $.each(obj.categories, function(index, value){
-        var category = value.toLowerCase().replace(' ', '-');
+        var category = value.toLowerCase().replace(/ /g, '-');
         var temp = `<div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input is-invalid" id="radio-${category}" name="category" value="" required>
+                        <input type="radio" class="custom-control-input" id="radio-${category}" name="category" value="" required>
                         <label class="custom-control-label" for="radio-${category}">${value}</label>
                     </div>`;
         $(`.choose-category-js`).append(temp)
     });
 
-    var lastRadio = `#radio-${obj.categories.slice(-1)[0].toLowerCase().replace(' ', '-')}`;
+    var lastRadio = `#radio-${obj.categories.slice(-1)[0].toLowerCase().replace(/ /g, '-')}`;
     var warningCategory = `<div class="invalid-feedback">Please choose categories</div>`;
     $(lastRadio).parent().append(warningCategory);
 }
@@ -94,11 +96,30 @@ function readBucketList_bucket(obj) {
 	})	
 }
 
+// Function add element about Post in post.html
+function readPost_post(obj) {
+    $.each(obj.post, function(index, value){
+        var title = change_alias(value.title).toLowerCase().replace(/ /g, '-') + ".html";
+        if (title == page) {
+            var date = new Date(value.created);
+            $("title").text(value.title + " - Blog's Reideen");
+            $(".title-post").text(value.title);
+            $(".created-post").text(date.toDateString() + " - WinterHk");
+            $(".main-content-post").html(value.content);
+            return false;
+        }
+        console.log(title)
+	})	
+}
+
 if (page == "" || page == "index.html") {
-    loadDoc(categories_url, readCategories_index);
+    loadDoc(categories_url, readCategories_index);      // index.html
     loadDoc(posts_url, readPost_index);
 } else if (page == "bucket.html") {
-    loadDoc(bucketList_url, readBucketList_bucket);
+    loadDoc(bucketList_url, readBucketList_bucket);     // bucket.html
 } else if (page == "create-post.html") {
-    loadDoc(categories_url, readCategories_createPost);
+    loadDoc(categories_url, readCategories_createPost); // create-post.html
+} else {
+    posts_url = "../" + posts_url;
+    loadDoc(posts_url, readPost_post);                  // all page post
 }
