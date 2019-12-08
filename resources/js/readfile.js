@@ -1,4 +1,5 @@
 var page = location.href.split("/").slice(-1)[0]
+let post = new URLSearchParams(location.search).get("post");
 
 var categories_url = 'data/categories.json';
 var posts_url = 'data/posts.json';
@@ -64,7 +65,7 @@ function readPost_index(obj) {
                             <p class="card-text"><small class="text-muted">Last updated ${date.toDateString()}</small></p>
                         </div>
                     </a>`;
-        $(`.list-${category}-js`).append(temp);
+        $(`.list-${category}-js`).prepend(temp);
 	})	
 }
 
@@ -74,7 +75,7 @@ function readCategories_createPost(obj) {
     $.each(obj.categories, function(index, value){
         var category = value.toLowerCase().replace(/ /g, '-');
         var temp = `<div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="radio-${category}" name="category" value="" required>
+                        <input type="radio" class="custom-control-input" id="radio-${category}" name="category" value="${category}" required>
                         <label class="custom-control-label" for="radio-${category}">${value}</label>
                     </div>`;
         $(`.choose-category-js`).append(temp)
@@ -96,9 +97,6 @@ function readBucketList_bucket(obj) {
 
 // Function add element about Post in post.html
 function readPost_post(obj) {
-    let post = new URLSearchParams(location.search).get("post");
-    console.log(post)
-
     $.each(obj.post, function(index, value){
         var title = change_alias(value.title).toLowerCase().replace(/ /g, '-');
         if (title == post) {
@@ -109,7 +107,6 @@ function readPost_post(obj) {
             $(".main-content-post").html(value.content);
             return false;
         }
-        console.log(title)
 	})	
 }
 
@@ -121,5 +118,10 @@ if (page == "" || page == "index.html") {
 } else if (page == "create-post.html") {
     loadDoc(categories_url, readCategories_createPost); // create-post.html
 } else {
-    loadDoc(posts_url, readPost_post);                  // all page post
+    if (post == null) {
+        var newLink = window.location.href.split('/');
+        newLink[newLink.length - 1] = "";
+        location.href = newLink.join('/');
+    }
+    loadDoc(posts_url, readPost_post);                  // post.html
 }

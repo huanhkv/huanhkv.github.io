@@ -6,11 +6,11 @@
         },
         {
             "checked" : 0, 
-            "content" : "Có bằng PhD"
+            "content" : "Có bằng Master"
         },
         {
             "checked" : 0, 
-            "content" : "Có bằng master"
+            "content" : "Có bằng PhD"
         },
         {
             "checked" : 0, 
@@ -59,6 +59,66 @@
         {
             "checked" : 0, 
             "content" : "Kiếm tiền xây nhà"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Sáng tác 1 bài nhạc"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Chơi thành thạo Piano"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Chơi thành thạo Kalimba"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Chơi thành thạo Harmonica"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Sưu tầm đủ bộ Dragon Ball bản gốc tiếng nhật"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Sưu tầm đủ bộ One Piece bản gốc tiếng nhật"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Sưu tầm đủ bộ Naruto bản gốc tiếng nhật"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Sưu tầm đủ bộ Shingenki no kyojin gốc tiếng nhật"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Thành thạo tiếng anh"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Thành thạo tiếng nhật"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Rank Divine Dota 2"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Tham quan 10 quốc gia"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Tham quan 15 quốc gia"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Tham quan 20 quốc gia"
+        },
+        {
+            "checked" : 0, 
+            "content" : "Build 1 hệ thống giám sát, quản lý, đưa ra chiến lược cho cửa háng tạp hóa"
         }
     ]
 }
