@@ -11,8 +11,7 @@ function loadDoc(url, callback) {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var obj = JSON.parse(this.responseText);
-            callback(obj);
+            callback(JSON.parse(this.responseText));
         }
     };
     xhttp.open("GET", url, true);
