@@ -5,19 +5,6 @@ var categories_url = 'data/categories.json';
 var posts_url = 'data/posts.json';
 var bucketList_url = 'data/bucket-list.json';
 
-// Function read JSON and implement function callback
-function loadDoc(url, callback) {
-    var xhttp;
-    xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            callback(JSON.parse(this.responseText));
-        }
-    };
-    xhttp.open("GET", url, true);
-    xhttp.send();
-}
-
 // Function add element about Categories in index.html
 function readCategories_index(obj) {
     // Create tag div for categories
@@ -109,18 +96,18 @@ function readPost_post(obj) {
 	})	
 }
 
-if (page == "" || page == "index.html") {
-    loadDoc(categories_url, readCategories_index);      // index.html
-    loadDoc(posts_url, readPost_index);
-} else if (page == "bucket.html") {
-    loadDoc(bucketList_url, readBucketList_bucket);     // bucket.html
-} else if (page == "create-post.html") {
-    loadDoc(categories_url, readCategories_createPost); // create-post.html
-} else {
+if (page == "" || page == "index.html") {               // index.html
+    $.getJSON(categories_url, readCategories_index);
+    $.getJSON(posts_url, readPost_index);
+} else if (page == "bucket.html") {                     // bucket.html
+    $.getJSON(bucketList_url, readBucketList_bucket);
+} else if (page == "create-post.html") {                // create-post.html
+    $.getJSON(categories_url, readCategories_createPost); 
+} else {                                                // post.html
     if (post == null) {
         var newLink = window.location.href.split('/');
         newLink[newLink.length - 1] = "";
         location.href = newLink.join('/');
     }
-    loadDoc(posts_url, readPost_post);                  // post.html
+    $.getJSON(posts_url, readPost_post);
 }
