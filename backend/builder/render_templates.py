@@ -101,12 +101,23 @@ def render_timeline():
     output_path.write_text(html, encoding='utf-8')
     print(f"  ✓ timeline.html")
 
+def render_about():
+    """Render about page"""
+    template = env.get_template('about.html')
+    
+    html = template.render()
+    
+    output_path = DIST_DIR / "about.html"
+    output_path.write_text(html, encoding='utf-8')
+    print(f"  ✓ about.html")
+
 def render_all_pages(posts):
     """Render all pages"""
     render_index(posts)
     render_posts(posts)
     render_bucket()
     render_timeline()
+    render_about()
 
 if __name__ == "__main__":
     from parse_posts import parse_all_posts
