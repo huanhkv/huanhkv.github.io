@@ -4,30 +4,10 @@ Static blog generator with markdown posts. Ready to evolve into a dynamic site.
 
 ## Quick Start
 
-**Build site:**
 ```bash
-make build
-# or: ./build.sh (legacy)
-```
-
-**Preview locally:**
-```bash
-make serve
-# or: cd frontend/dist && python3 -m http.server 8000
-```
-
-**Development mode:**
-```bash
-make dev        # Serve without rebuilding
-make watch      # Auto-rebuild on file changes (requires fswatch)
-```
-
-**Other commands:**
-```bash
-make help       # Show all available commands
-make clean      # Clean build output
-make install    # Install dependencies
-make check      # Check required tools
+make build      # Build site
+make serve      # Build and preview at localhost:8000
+make help       # Show all commands
 ```
 
 **Deploy:** Push to GitHub (auto-deploys via Actions)
@@ -43,7 +23,7 @@ make check      # Check required tools
 │   ├── categories.json      # Categories
 │   └── tags.json            # Tags
 ├── backend/
-│   └── scripts/             # Build scripts
+│   └── builder/             # Build scripts
 ├── frontend/
 │   ├── dist/                # Generated site (deployed)
 │   ├── templates/           # HTML templates
@@ -52,13 +32,12 @@ make check      # Check required tools
 
 ## Create New Post
 
-1. Create: `content/posts/YYYY-MM-DD-title.md`
-2. Add frontmatter:
+Create `content/posts/YYYY-MM-DD-title.md`:
 
 ```markdown
 ---
 title: "Post Title"
-date: 2025-12-04
+date: 2025-12-04T10:30:00.000Z
 categories: ["Computer Science"]
 tags: ["tutorial"]
 featured_image: "image.jpg"
@@ -68,8 +47,7 @@ excerpt: "Brief description"
 Your markdown content here...
 ```
 
-3. Build: `./build.sh`
-4. Push to deploy
+Then run `make build` and push to deploy.
 
 ## Content Files
 
@@ -86,5 +64,3 @@ Your markdown content here...
 3. Push to master to deploy
 
 ---
-
-**Phase 2 Ready**: Structure prepared for FastAPI/Flask backend + React/Vue frontend
