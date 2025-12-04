@@ -3,15 +3,14 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # or main, depending on your default branch
-  workflow_dispatch:  # Allow manual trigger
+      - master
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -35,14 +34,10 @@ jobs:
           enable-cache: true
       
       - name: Install dependencies
-        run: |
-          cd backend
-          uv sync
+        run: make install
       
       - name: Build site
-        run: |
-          cd backend/scripts
-          uv run python build_site.py
+        run: make build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
