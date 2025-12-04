@@ -1,0 +1,31 @@
+{
+  "timeline": [
+    {
+      "id": 1,
+      "type": "post",
+      "title": "Published: My First Post",
+      "description": "Started my blogging journey with an introductory post",
+      "date": "2025-01-01T10:00:00Z",
+      "link": "/posts/2025-01-01-my-first-post.html",
+      "icon": "📝"
+    },
+    {
+      "id": 2,
+      "type": "bucket",
+      "title": "Bucket Update: Completed Personal Website",
+      "description": "Successfully built and deployed my personal blog",
+      "date": "2025-01-01T09:00:00Z",
+      "link": "/bucket.html",
+      "icon": "✅"
+    },
+    {
+      "id": 3,
+      "type": "status",
+      "title": "Status: Excited to start blogging!",
+      "description": "Ready to share my thoughts and experiences with the world",
+      "date": "2024-12-31T20:00:00Z",
+      "link": null,
+      "icon": "🎉"
+    }
+  ]
+}

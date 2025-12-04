@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Bucket List - Reideen's Blog{% endblock %}
+{% block nav_bucket %}active{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-10">
+        <h1 class="mb-4">🎯 My Bucket List</h1>
+        <p class="lead mb-5">Things I want to accomplish in life</p>
+
+        {% if bucket_list %}
+        <!-- Group by status -->
+        {% set completed_items = bucket_list|selectattr('status', 'equalto', 'completed')|list %}
+        {% set in_progress_items = bucket_list|selectattr('status', 'equalto', 'in-progress')|list %}
+        {% set pending_items = bucket_list|selectattr('status', 'equalto', 'pending')|list %}
+
+        <!-- In Progress -->
+        {% if in_progress_items %}
+        <div class="mb-5">
+            <h3 class="mb-3">🚀 In Progress</h3>
+            <div class="list-group">
+                {% for item in in_progress_items %}
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ item.title }}</h5>
+                        <small class="badge badge-primary">{{ item.category }}</small>
+                    </div>
+                    <p class="mb-1">{{ item.description }}</p>
+                    <small class="text-muted">Started: {{ item.created }}</small>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Pending -->
+        {% if pending_items %}
+        <div class="mb-5">
+            <h3 class="mb-3">📝 To Do</h3>
+            <div class="list-group">
+                {% for item in pending_items %}
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ item.title }}</h5>
+                        <small class="badge badge-secondary">{{ item.category }}</small>
+                    </div>
+                    <p class="mb-1">{{ item.description }}</p>
+                    <small class="text-muted">Added: {{ item.created }}</small>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Completed -->
+        {% if completed_items %}
+        <div class="mb-5">
+            <h3 class="mb-3">✅ Completed</h3>
+            <div class="list-group">
+                {% for item in completed_items %}
+                <div class="list-group-item bg-light">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1"><s>{{ item.title }}</s></h5>
+                        <small class="badge badge-success">{{ item.category }}</small>
+                    </div>
+                    <p class="mb-1">{{ item.description }}</p>
+                    <small class="text-muted">Completed: {{ item.completed }}</small>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% else %}
+        <div class="alert alert-info">
+            No bucket list items yet. Start adding your dreams!
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

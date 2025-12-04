@@ -1,0 +1,34 @@
+{
+  "tags": [
+    {
+      "id": "tutorial",
+      "name": "Tutorial",
+      "slug": "tutorial"
+    },
+    {
+      "id": "getting-started",
+      "name": "Getting Started",
+      "slug": "getting-started"
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "slug": "poetry"
+    },
+    {
+      "id": "vietnamese",
+      "name": "Vietnamese",
+      "slug": "vietnamese"
+    }
+  ]
+}
