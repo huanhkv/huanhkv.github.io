@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}About - Reideen's Blog{% endblock %}
+{% block nav_about %}active{% endblock %}
+{% block body_class %}bg-image{% endblock %}
+
+{% block content %}
+<div class="row align-items-center" style="min-height: calc(100vh - 170px);">
+    <div class="col-lg-2 col-md-1"></div>
+    <div class="col-lg-4 col-md-6" style="max-width: 33.33%;">
+        <div class="card shadow-sm bg-opacity-8 rounded-lg">
+            <div class="card-header border-bottom border-3 border-dark bg-transparent">
+                <h3 class="mb-0 font-weight-bold">Hồ Khả Việt Huấn (Winter Hk)</h3>
+            </div>
+            <div class="card-body">
+                <p class="lead mb-4">
+                    Đam mê công nghệ và nghiên cứu về khoa học máy tính. Thích tham quan mọi nơi, học hỏi mọi thứ ở tuổi trẻ 
+                    và rồi hòa cùng thiên nhiên khi về già ^.^
+                </p>
+                <hr>
+                <div class="lead">
+                    <p class="mb-2"><strong>Email:</strong> huanhkv@gmail.com</p>
+                    <p class="mb-2"><strong>Connect:</strong></p>
+                    <p>
+                        <a href="https://www.facebook.com/huanhkv" class="btn btn-sm btn-outline-primary mr-2" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://github.com/huanhkv" class="btn btn-sm btn-outline-dark mr-2" target="_blank">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                        <a href="https://twitter.com/huanhkv" class="btn btn-sm btn-outline-info mr-2" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.linkedin.com/in/huanhkv/" class="btn btn-sm btn-outline-primary" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
