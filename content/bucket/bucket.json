@@ -1,0 +1,274 @@
+{
+  "bucket_list": [
+    {
+      "id": 1,
+      "title": "Viết blog cá nhân",
+      "description": "Tạo và duy trì blog cá nhân để chia sẻ kiến thức",
+      "status": "completed",
+      "created": "2024-01-01",
+      "completed": "2025-01-01",
+      "category": "project"
+    },
+    {
+      "id": 2,
+      "title": "Có bằng Master",
+      "description": "Hoàn thành chương trình thạc sĩ",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "education"
+    },
+    {
+      "id": 3,
+      "title": "Có bằng PhD",
+      "description": "Hoàn thành chương trình tiến sĩ",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "education"
+    },
+    {
+      "id": 4,
+      "title": "Đạt lương 12tr/tháng",
+      "description": "Mốc lương đầu tiên trong sự nghiệp",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "career"
+    },
+    {
+      "id": 5,
+      "title": "Đạt lương 20tr/tháng",
+      "description": "Phát triển sự nghiệp và tăng thu nhập",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "career"
+    },
+    {
+      "id": 6,
+      "title": "Đạt lương 25tr/tháng",
+      "description": "Tiếp tục phát triển thu nhập",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "career"
+    },
+    {
+      "id": 7,
+      "title": "Đạt lương 30tr/tháng",
+      "description": "Đạt mốc thu nhập trung bình cao",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "career"
+    },
+    {
+      "id": 8,
+      "title": "Đạt lương 40tr/tháng",
+      "description": "Mục tiêu thu nhập dài hạn",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "career"
+    },
+    {
+      "id": 9,
+      "title": "Tham quan Stanford University",
+      "description": "Ghé thăm trường đại học Stanford tại California",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 10,
+      "title": "Đưa ba mẹ đi chơi trong nước",
+      "description": "Tạo những kỷ niệm đẹp cùng gia đình tại Việt Nam",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "family"
+    },
+    {
+      "id": 11,
+      "title": "Đưa ba mẹ đi chơi ngoài nước",
+      "description": "Đưa cha mẹ trải nghiệm du lịch quốc tế",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "family"
+    },
+    {
+      "id": 12,
+      "title": "Cưới vợ",
+      "description": "Tìm được người bạn đời và xây dựng gia đình",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "personal"
+    },
+    {
+      "id": 13,
+      "title": "Sống thử ở Nhật Bản",
+      "description": "Trải nghiệm cuộc sống tại Nhật Bản",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 14,
+      "title": "Sống thử ở Thụy Sĩ",
+      "description": "Trải nghiệm cuộc sống tại Thụy Sĩ",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 15,
+      "title": "Kiếm tiền xây nhà",
+      "description": "Tích lũy đủ tài chính để xây nhà riêng",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "finance"
+    },
+    {
+      "id": 16,
+      "title": "Sáng tác 1 bài nhạc",
+      "description": "Tạo ra một tác phẩm âm nhạc của riêng mình",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "hobby"
+    },
+    {
+      "id": 17,
+      "title": "Chơi thành thạo Piano",
+      "description": "Thành thạo nhạc cụ Piano",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "hobby"
+    },
+    {
+      "id": 18,
+      "title": "Chơi thành thạo Kalimba",
+      "description": "Thành thạo nhạc cụ Kalimba",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "hobby"
+    },
+    {
+      "id": 19,
+      "title": "Chơi thành thạo Harmonica",
+      "description": "Thành thạo nhạc cụ Harmonica",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "hobby"
+    },
+    {
+      "id": 20,
+      "title": "Sưu tầm đủ bộ Dragon Ball bản gốc tiếng Nhật",
+      "description": "Hoàn thành bộ sưu tập manga Dragon Ball",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "collection"
+    },
+    {
+      "id": 21,
+      "title": "Sưu tầm đủ bộ One Piece bản gốc tiếng Nhật",
+      "description": "Hoàn thành bộ sưu tập manga One Piece",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "collection"
+    },
+    {
+      "id": 22,
+      "title": "Sưu tầm đủ bộ Naruto bản gốc tiếng Nhật",
+      "description": "Hoàn thành bộ sưu tập manga Naruto",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "collection"
+    },
+    {
+      "id": 23,
+      "title": "Sưu tầm đủ bộ Shingeki no Kyojin bản gốc tiếng Nhật",
+      "description": "Hoàn thành bộ sưu tập manga Attack on Titan",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "collection"
+    },
+    {
+      "id": 24,
+      "title": "Thành thạo tiếng Anh",
+      "description": "Đạt trình độ thành thạo tiếng Anh",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "skill"
+    },
+    {
+      "id": 25,
+      "title": "Thành thạo tiếng Nhật",
+      "description": "Đạt trình độ thành thạo tiếng Nhật",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "skill"
+    },
+    {
+      "id": 26,
+      "title": "Rank Divine Dota 2",
+      "description": "Đạt rank Divine trong game Dota 2",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "gaming"
+    },
+    {
+      "id": 27,
+      "title": "Tham quan 10 quốc gia",
+      "description": "Du lịch và khám phá 10 quốc gia khác nhau",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 28,
+      "title": "Tham quan 15 quốc gia",
+      "description": "Mở rộng trải nghiệm du lịch đến 15 quốc gia",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 29,
+      "title": "Tham quan 20 quốc gia",
+      "description": "Mục tiêu du lịch 20 quốc gia trên thế giới",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "travel"
+    },
+    {
+      "id": 30,
+      "title": "Build hệ thống quản lý cửa hàng tạp hóa",
+      "description": "Xây dựng hệ thống giám sát, quản lý và đưa ra chiến lược cho cửa hàng tạp hóa",
+      "status": "pending",
+      "created": "2024-01-01",
+      "completed": null,
+      "category": "project"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Reideen's Blog - Home{% endblock %}
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+<div class="row justify-content-around">
+    <div class="col-lg-2 col-md-3 mt-5">
+        <nav class="list-group flex-md-column nav-justified" id="list-tab" role="tablist">
+            <!-- Tab Sidebar -->
+            {% for category in categories %}
+            <a class="list-group-item list-group-item-action {% if loop.first %}active{% endif %}" 
+               id="list-{{ category.slug }}-list" 
+               data-toggle="list" 
+               href="#list-{{ category.slug }}" 
+               role="tab" 
+               aria-controls="{{ category.slug }}">
+                {{ category.name }}
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
+    <!-- End sidebar -->
+    
+    <div class="col-lg-9 col-md-9 mt-3">
+        <div class="tab-content border border-1 border-dark rounded p-3 bg-opacity" id="nav-tabContent">
+            <!-- Tab Content-->
+            {% for category in categories %}
+            <div class="tab-pane fade {% if loop.first %}active show{% endif %}" 
+                 id="list-{{ category.slug }}" 
+                 role="tabpanel" 
+                 aria-labelledby="list-{{ category.slug }}-list">
+                <h4>{{ category.name }}</h4>
+                <hr>
+                <div class="card-columns mt-4">
+                    {% for post in posts %}
+                        {% if category.name in post.categories %}
+                        <a href="/posts/{{ post.slug }}.html" class="card text-center">
+                            {% if post.featured_image %}
+                            <img src="/images/{{ post.featured_image }}" class="card-img-top" alt="{{ post.title }}">
+                            {% endif %}
+                            <div class="card-header">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted">Last updated {{ post.date }}</small></p>
+                            </div>
+                        </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- End all tab -->
+</div>
+{% endblock %}

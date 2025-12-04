@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "description": "Posts about programming, algorithms, and technology",
+      "slug": "computer-science"
+    },
+    {
+      "id": "poem",
+      "name": "Poem",
+      "description": "Poetry and creative writing",
+      "slug": "poem"
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "description": "Music playlists and reviews",
+      "slug": "music"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "description": "Personal thoughts and experiences",
+      "slug": "personal"
+    }
+  ]
+}
